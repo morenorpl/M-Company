@@ -24,4 +24,4 @@
 
 </head>
 
-<body class="w-full h-auto lg:h-screen bg-sitebg">
+<body class="w-full h-auto lg:h-screen bg-[#FFF7E4]">

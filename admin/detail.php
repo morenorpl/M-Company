@@ -8,34 +8,36 @@ $report = $report[0];
 ?>
 
 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
-    <div class="border-2 col-span-1 md:col-span-3 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-auto mb-4">
+    <div class="col-span-1 md:col-span-3 border-4 border-gray-900 h-auto mb-4 bg-white">
         <div class="block h-full">
-            <div class="max-w-full border border-gray-200 rounded-lg shadow h-full flex flex-col">
-                <img class="rounded-t-lg w-full h-48 object-cover" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+            <div class="max-w-full border border-gray-200 shadow h-full flex flex-col">
+                <?php if ($report['thumbnail']): ?>
+                    <img class=" w-full h-48 object-cover" alt="<?= $report['thumbnail'] ?>" src="<?= "../assets/upload/" . $report['thumbnail'] ?>" />
+                <?php endif ?>
                 <div class="p-5 flex-grow flex flex-col">
                     <div class="flex items-center mb-4">
                         <div class="flex-1 min-w-0">
-                            <p class="text-sm font-medium text-gray-600 truncate">
+                            <p class="text-sm font-medium text-gray-800 truncate">
                                 <?= $report['user_name'] ?>
                             </p>
-                            <p class="text-xs text-gray-500 truncate dark:text-gray-400">
+                            <p class="text-xs text-gray-700 truncate">
                                 <?= $report['created_at'] ?>
                             </p>
                         </div>
                     </div>
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-600"><?= $report['title'] ?></h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 flex-grow"><?= html_entity_decode(html_entity_decode(strval($report['content']))) ?></p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><?= $report['title'] ?></h5>
+                    <p class="mb-3 font-normal text-gray-800 flex-grow"><?= html_entity_decode(html_entity_decode(strval($report['content']))) ?></p>
                 </div>
                 <div class="container border-t-2 border-gray-300 ">
                     <h1 class="font-bold text-2xl text-center text-gray-900 mt-10">Comments (3)</h1>
-                    <div class="bg-white shadow-lg rounded-lg md:mx-auto my-4 max-w-2xl">
+                    <div class="bg-white border-4 border-gray-900 shadow-lg md:mx-auto my-4 max-w-2xl">
                         <div class="px-12 py-6 ">
                             <div class="flex items-center justify-between">
                                 <h2 class="text-lg font-semibold text-gray-900 -mt-1">Brad Adams</h2>
                             </div>
-                            <textarea id="editor" class="w-full h-32 border border-gray-300 rounded-lg p-2 resize-none" placeholder="Type your comment here..."></textarea>
+                            <textarea id="editor" class="w-full h-32 border bg-gray-800 border-gray-300 p-2 resize-none" placeholder="Type your comment here..."></textarea>
                             <div class="flex justify-end">
-                                <button type="submit" class="bg-blue-500 px-6 py-2 mt-4 text-white rounded hover:bg-blue-600">Submit</button>
+                                <button type="submit" class="bg-gray-900 px-6 py-2 mt-4 text-white border-2 border-white hover:bg-white hover:text-gray-900 hover:border-gray-900">Submit</button>
                             </div>
                         </div>
                         <div class="px-12 py-6 border-t-2">
@@ -105,15 +107,15 @@ $report = $report[0];
     </div>
 
 
-    <div class="border-blue-600 border-4 rounded-lg shadow h-fit flex flex-col justify-between col-span-1 md:col-span-1 hidden md:block">
+    <div class="border-[#0C0D0F] bg-[#FDC6FF] border-4 shadow h-fit flex flex-col justify-between col-span-1 md:col-span-1 hidden md:block">
         <div class="p-5">
-            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-600">Breaking News!!</h5>
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Breaking News!!</h5>
         </div>
         <img class="rounded-2xl w-5/6 h-48 text-center mx-auto" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
         <div class="p-5">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-600">Checkout DEV++</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Invest in your developer career with our value-maximizing membership program.</p>
-            <button class="w-full outline-blue-500 outline rounded text-blue-500 font-normal text-lg p-1 hover:bg-blue-500 hover:text-white hover:font-bold">Read more</button>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Checkout DEV++</h5>
+            <p class="mb-3 font-normal text-gray-800">Invest in your developer career with our value-maximizing membership program.</p>
+            <button class="w-full outline-gray-900 outline text-gray-900 bg-white font-medium text-lg p-1 hover:bg-gray-900 hover:text-white hover:font-bold">Read more</button>
         </div>
     </div>
 </div>

@@ -35,7 +35,7 @@ $roles = query("SELECT * FROM roles");
         <tbody>
             <?php if (empty($reports)) : ?>
                 <tr>
-                    <td colspan="6" class="bg-blue-400 px-6 py-4 text-center text-white">
+                    <td colspan="6" class="bg-[#0C0D0F] px-6 py-4 text-center text-white">
                         Data kosong
                     </td>
                 </tr>
@@ -43,7 +43,7 @@ $roles = query("SELECT * FROM roles");
                 $no = 1;
             ?>
                 <?php foreach ($reports as $report) : ?>
-                    <tr class="bg-blue-400 border-b hover:bg-blue-500 text-white">
+                    <tr class="bg-[#0C0D0F] border-b hover:bg-gray-900 text-white">
                         <td class="px-6 py-4 font-bold">
                             <?= $no++ ?>
                         </td>

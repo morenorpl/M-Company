@@ -20,7 +20,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . "/layout/sidebar.php");
 ?>
 
 
-<main class="flex flex-col gap-4 md:gap-5 px-4 lg:px-5 lg:ml-56 h-auto pt-20 pb-5">
+<main class="flex flex-col gap-4 md:gap-5 px-4 lg:px-5 lg:ml-56 h-auto pt-20 pb-5 bg-[#FFF7E4]">
     <?php
     if ($_GET['page'] == "" || $_GET["page"] == "dashboard") {
         include_once("dashboard.php");

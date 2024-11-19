@@ -12,13 +12,13 @@
 </head>
 
 
-<body class="bg-gray-200 font-sans text-gray-700">
+<body class="bg-[#AAD7B8] font-sans text-gray-700">
     <div class="container mx-auto p-8 flex">
         <div class="max-w-md w-full mx-auto">
             <div class="container flex flex-col justify-center items-center">
-                <img src="../assets/images/logo.png " class="mr-3 w-1/4" alt="Logo" />
-                <span class="bg-gradient-to-r text-transparent from-green-500 to-black bg-clip-text">
-                    <h1 class="text-4xl text-center mb-12 font-bold ">Login lur</h1>
+                <img src="../assets/images/dashboard.png " class="mr-3 w-1/4" alt="Logo" />
+                <span class="bg-gray-900 text-transparent bg-clip-text">
+                    <h1 class="text-4xl text-center mb-12  stroke-gray-900 font-bold ">Login to M-Company</h1>
                 </span>
 
             </div>
@@ -34,7 +34,7 @@
                             <input placeholder="*********" type="password" name="password" class="block w-full p-3 rounded bg-gray-200 border border-transparent focus:outline-none">
                         </div>
 
-                        <button type="submit" name="login" class="w-full p-3 mt-4 bg-blue-500 text-white rounded shadow hover:bg-blue-600">Login</button>
+                        <button type="submit" name="login" class="w-full p-3 mt-4 bg-[#F7C236] text-white rounded shadow hover:bg-[#F7D47A]">Login</button>
                     </form>
                 </div>
 
